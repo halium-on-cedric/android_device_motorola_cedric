@@ -107,6 +107,11 @@ PRODUCT_COPY_FILES += \
     device/motorola/cedric/configs/camera/msm8937_mot_camera.xml:system/etc/camera/msm8937_mot_camera.xml \
     device/motorola/cedric/configs/camera/mot_ov5695_chromatix.xml:system/etc/camera/mot_ov5695_chromatix.xml \
     device/motorola/cedric/configs/camera/mot_imx258_chromatix.xml:system/etc/camera/mot_imx258_chromatix.xml
+    
+# Ubuntu Overlay Files
+#
+PRODUCT_COPY_FILES += \
+    device/xiaomi/vince/ubuntu/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules
 
 # CMActions
 PRODUCT_PACKAGES += \
