@@ -94,7 +94,7 @@ PRODUCT_COPY_FILES += \
     device/motorola/cedric/audio/sound_trigger_mixer_paths_wcd9330.xml:system/etc/sound_trigger_mixer_paths_wcd9330.xml \
     device/motorola/cedric/audio/sound_trigger_mixer_paths_wcd9335.xml:system/etc/sound_trigger_mixer_paths_wcd9335.xml \
     device/motorola/cedric/audio/sound_trigger_platform_info.xml:system/etc/sound_trigger_platform_info.xml \
-    device/motorola/ubuntu/touch.pa:system/halium/etc/touch.pa
+    device/motorola/ubuntu/touch.pa:system/halium/etc/pulse/touch.pa
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -112,7 +112,8 @@ PRODUCT_COPY_FILES += \
 # Ubuntu Overlay Files
 #
 PRODUCT_COPY_FILES += \
-    device/motorola/cedric/ubuntu/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules
+    device/motorola/cedric/ubuntu/70-cedric.rules:system/halium/usr/lib/lxc-android-config/70-cedric.rules
+
 
 # CMActions
 PRODUCT_PACKAGES += \
