@@ -93,7 +93,8 @@ PRODUCT_COPY_FILES += \
     device/motorola/cedric/audio/sound_trigger_mixer_paths_wcd9306.xml:system/etc/sound_trigger_mixer_paths_wcd9306.xml \
     device/motorola/cedric/audio/sound_trigger_mixer_paths_wcd9330.xml:system/etc/sound_trigger_mixer_paths_wcd9330.xml \
     device/motorola/cedric/audio/sound_trigger_mixer_paths_wcd9335.xml:system/etc/sound_trigger_mixer_paths_wcd9335.xml \
-    device/motorola/cedric/audio/sound_trigger_platform_info.xml:system/etc/sound_trigger_platform_info.xml
+    device/motorola/cedric/audio/sound_trigger_platform_info.xml:system/etc/sound_trigger_platform_info.xml \
+    device/motorola/ubuntu/touch.pa:system/halium/etc/touch.pa
 
 # Camera
 PRODUCT_PACKAGES += \
