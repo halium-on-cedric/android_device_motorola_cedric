@@ -112,7 +112,7 @@ PRODUCT_COPY_FILES += \
 # Ubuntu Overlay Files
 #
 PRODUCT_COPY_FILES += \
-    device/xiaomi/vince/ubuntu/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules
+    device/motorola/cedric/ubuntu/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules
 
 # CMActions
 PRODUCT_PACKAGES += \
