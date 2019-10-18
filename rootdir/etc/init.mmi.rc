@@ -216,8 +216,7 @@ on boot
    chown system system /sys/class/graphics/fb0/acl_mode
 
    # Change ownership and permission for vibrator
-   chown system system /sys/class/timed_output/vibrator/enable
-   chmod 0660 /sys/class/timed_output/vibrator/enable
+   chmod 0666 /sys/class/timed_output/vibrator/enable
 
    # Change ownership and permission for laser_sensor
    chown system system /sys/kernel/range/enable_sar
