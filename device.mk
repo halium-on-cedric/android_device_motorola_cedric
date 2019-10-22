@@ -115,9 +115,6 @@ PRODUCT_COPY_FILES += \
     device/motorola/cedric/ubuntu/70-android.rules:system/halium/usr/lib/lxc-android-config/70-android.rules
 
 
-# CMActions
-PRODUCT_PACKAGES += \
-    CMActions
 
 # Display
 PRODUCT_PACKAGES += \
