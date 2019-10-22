@@ -112,7 +112,7 @@ PRODUCT_COPY_FILES += \
 # Ubuntu Overlay Files
 #
 PRODUCT_COPY_FILES += \
-    device/motorola/cedric/ubuntu/70-cedric.rules:system/halium/usr/lib/lxc-android-config/70-cedric.rules
+    device/motorola/cedric/ubuntu/70-android.rules:system/halium/usr/lib/lxc-android-config/70-android.rules
 
 
 # CMActions
