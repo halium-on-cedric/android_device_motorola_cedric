@@ -112,8 +112,11 @@ PRODUCT_COPY_FILES += \
 # Ubuntu Overlay Files
 #
 PRODUCT_COPY_FILES += \
-    device/motorola/cedric/ubuntu/70-android.rules:system/halium/usr/lib/lxc-android-config/70-android.rules
-
+    device/motorola/cedric/ubuntu/70-android.rules:system/halium/usr/lib/lxc-android-config/70-android.rules \
+    device/motorola/cedric/ubuntu/apparmor.d/abstractions/base:system/halium/etc/apparmor.d/abstractions/base \
+    device/motorola/cedric/ubuntu/apparmor.d/local/usr.bin.media-hub-server:system/halium/etc/apparmor.d/local/usr.bin.media-hub-server \
+    device/motorola/cedric/ubuntu/apparmor.d/hardware/graphics.d/apparmor-easyprof-ubuntu_android:system/halium/usr/share/apparmor/hardware/graphics.d/apparmor-easyprof-ubuntu_android \
+    device/motorola/cedric/ubuntu/apparmor.d/hardware/video.d/apparmor-easyprof-ubuntu_android:system/halium/usr/share/apparmor/hardware/video.d/apparmor-easyprof-ubuntu_android \
 
 
 # Display
@@ -290,3 +293,26 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.t-o.quirk.forcesink=sink.primary \
     ro.t-o.quirk.forcesource=source.primary
+
+# UBPorts
+# Aethercast
+PRODUCT_PROPERTY_OVERRIDES += \
+    ubuntu.widi.supported=1
+
+PRODUCT_PACKAGES += \
+    libubuntu_application_api \
+    libcameraservice \
+    libdroidmedia \
+    libcamera_compat_layer \
+    libmedia_compat_layer \
+    libui_compat_layer \
+    libsf_compat_layer \
+    minimediaservice \
+    minisfservice \
+    libminisf \
+    libaudioflingerglue \
+    miniafservice
+
+## Power off charging mode
+PRODUCT_PACKAGES += \
+    charger_res_images

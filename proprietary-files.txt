@@ -1,8 +1,5 @@
 # Proprietary files for cedric
 
--app/datastatusnotification/datastatusnotification.apk
--app/embms/embms.apk
--app/TimeService/TimeService.apk
 bin/adspd
 bin/adsprpcd
 bin/akmd09912
@@ -151,10 +148,6 @@ etc/permissions/ims.xml
 etc/permissions/izat.xt.srv.xml
 etc/permissions/qcrilhook.xml
 etc/permissions/qti_permissions.xml
--framework/com.qti.snapdragon.sdk.display.jar
--framework/embmslibrary.jar
--framework/imscmlibrary.jar
--framework/qcrilhook.jar
 lib/hw/camera.msm8937.so:lib/hw/camera.vendor.msm8937.so
 lib/hw/fingerprint.msm8937.so
 lib/hw/gps.default.so
@@ -214,10 +207,6 @@ lib/libtpa.so
 lib/libvpplibrary.so
 lib/libwbxmlparser.so
 lib/libzxingcpp.so
--priv-app/CNEService/CNEService.apk
--vendor/app/colorservice/colorservice.apk
--vendor/app/ims/ims.apk
--vendor/app/imssettings/imssettings.apk
 vendor/bin/audioflacapp
 vendor/bin/esepmdaemon
 vendor/bin/perfd

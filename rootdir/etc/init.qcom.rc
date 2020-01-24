@@ -444,6 +444,16 @@ service audiod /system/bin/audiod
 on property:vold.decrypt=trigger_restart_framework
     start config_bt_addr
 
+on property:init.svc.sensorservice=running
+    start unblock_wakelock
+
+service unblock_wakelock /system/bin/sh /system/etc/unblock_wakelock.sh
+    class main
+    user root
+    group root
+    disabled
+    oneshot
+
 on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
 
@@ -871,6 +881,19 @@ service rild2-wrapper /system/bin/sh /system/etc/init.qcom.ril.sh
 service ssr_setup /system/bin/ssr_setup
     oneshot
     disabled
+
+service minimedia /system/bin/minimediaservice
+    class main
+    user media
+    group audio camera
+    ioprio rt 4
+#   hack to make recorded video playback work
+    setenv LD_PRELOAD /system/lib/libOmxVdec.so
+    
+service miniafservice /system/bin/miniafservice
+    class core
+    user root
+    group audio
 
 on property:persist.sys.ssr.restart_level=*
     start ssr_setup
