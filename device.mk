@@ -278,6 +278,11 @@ PRODUCT_PACKAGES += \
 	antradio_app \
 	com.dsi.ant.antradio_library \
 	libantradio
+	
+# Ubuntu Overlay Files
+#
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ubuntu/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules \
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
