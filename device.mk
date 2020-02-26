@@ -112,7 +112,7 @@ PRODUCT_COPY_FILES += \
 # Ubuntu Overlay Files
 #
 PRODUCT_COPY_FILES += \
-    device/motorola/cedric/ubuntu/70-android.rules:system/halium/usr/lib/lxc-android-config/70-android.rules \
+    device/motorola/cedric/ubuntu/70-cedric.rules:system/halium/usr/lib/lxc-android-config/70-cedric.rules \
     device/motorola/cedric/ubuntu/apparmor.d/abstractions/base:system/halium/etc/apparmor.d/abstractions/base \
     device/motorola/cedric/ubuntu/apparmor.d/local/usr.bin.media-hub-server:system/halium/etc/apparmor.d/local/usr.bin.media-hub-server \
     device/motorola/cedric/ubuntu/apparmor.d/hardware/graphics.d/apparmor-easyprof-ubuntu_android:system/halium/usr/share/apparmor/hardware/graphics.d/apparmor-easyprof-ubuntu_android \
