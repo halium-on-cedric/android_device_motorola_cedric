@@ -265,10 +265,6 @@ PRODUCT_PACKAGES += \
     p2p_supplicant_overlay.conf \
     wpa_supplicant_overlay.conf
     
-# Udev rules
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/ubuntu/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules \
-    
 PRODUCT_PACKAGES += \
     libcurl \
     libqsap_sdk \
