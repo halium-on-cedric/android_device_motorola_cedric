@@ -3,6 +3,9 @@
 ## From bitrvmpd's SailfishOS port
 ## Modified by asriel-danctnix (for ubports-santoni)
 
+# StereoRocker: insmod here to load wlan module at boot, necessary for ubports
+/system/bin/insmod /system/lib/modules/wlan.ko
+
 # Maximum number of attempts to enable hcismd to try to get
 # hci0 to come online.  Writing to sysfs too early seems to
 # not work, so we loop.
