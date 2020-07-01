@@ -208,7 +208,6 @@ lib/libvpplibrary.so
 lib/libwbxmlparser.so
 lib/libzxingcpp.so
 vendor/bin/audioflacapp
-vendor/bin/esepmdaemon
 vendor/bin/perfd
 vendor/bin/qseeproxydaemon
 vendor/bin/qseeproxysampledaemon
