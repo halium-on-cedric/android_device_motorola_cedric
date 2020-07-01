@@ -910,3 +910,9 @@ on charger
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
 
+# Ubuntu touch tweaks
+service init_wlan_bt /system/bin/sh /system/etc/init_hcismd_up.sh
+    class main
+    user root
+    group root
+    oneshot
