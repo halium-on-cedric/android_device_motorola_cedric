@@ -463,6 +463,7 @@ service qcamerasvr /system/bin/mm-qcamera-daemon
     user camera
     group camera system inet input graphics
     writepid /dev/cpuset/system-background/tasks
+	setenv LD_PRELOAD /system/lib/libshim_camera.so
 
 service cnd /system/bin/cnd
     class main

@@ -119,7 +119,10 @@ PRODUCT_COPY_FILES += \
     device/motorola/cedric/ubuntu/apparmor.d/hardware/video.d/apparmor-easyprof-ubuntu_android:system/halium/usr/share/apparmor/hardware/video.d/apparmor-easyprof-ubuntu_android \
     $(LOCAL_PATH)/ubuntu/timekeeper.conf:system/halium/etc/init/timekeeper.conf \
 	$(LOCAL_PATH)/ubuntu/display.conf:system/halium/etc/ubuntu-touch-session.d/android.conf \
-	$(LOCAL_PATH)/ubuntu/init_hcismd_up.sh:/system/etc/init_hcismd_up.sh
+	$(LOCAL_PATH)/ubuntu/init_hcismd_up.sh:/system/etc/init_hcismd_up.sh \
+	$(LOCAL_PATH)/ubuntu/powerd-config.xml:system/halium/usr/share/repowerd/device-configs/config-default.xml \
+	$(LOCAL_PATH)/ubuntu/device-hacks.conf:system/halium/etc/init/device-hacks.conf \
+	$(LOCAL_PATH)/ubuntu/ofono.override:system/halium/etc/init/ofono.override
 
 
 # Display
